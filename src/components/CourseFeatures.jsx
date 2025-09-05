@@ -42,7 +42,7 @@ const features = [
 
 export default function CourseFeatures() {
   return (
-    <section className="bg-black text-white py-16" id="course-features">
+    <section className="bg-black text-white py-16" id="Courses">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-12 text-center">
           Our Course Features
