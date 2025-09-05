@@ -3,7 +3,10 @@ import React from "react";
 
 const ProfileCard = () => {
   return (
-    <div className="max-w-12xl mx-auto bg-black text-white rounded-1xl shadow-xl overflow-hidden flex flex-col md:flex-row ">
+    <div
+      id="profile"
+      className="max-w-12xl mx-auto bg-black text-white  shadow-xl overflow-hidden flex flex-col md:flex-row p-6"
+    >
       {/* Left Side - Large Image */}
       <div className="md:w-1/3 w-full h-80 md:h-auto">
         <img

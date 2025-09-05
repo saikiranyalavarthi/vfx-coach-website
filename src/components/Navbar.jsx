@@ -33,8 +33,11 @@ const Navbar = () => {
           <a href="#" className="hover:text-lime-400">
             For Business
           </a>
-          <a href="#" className="hover:text-lime-400">
-            Alumni
+          <a
+            href="#profile"
+            className="block text-white hover:text-lime-400 transition-colors duration-300"
+          >
+            About
           </a>
           <a href="#" className="hover:text-lime-400">
             Newsletter
@@ -67,8 +70,8 @@ const Navbar = () => {
           <a href="#" className="block hover:text-lime-400">
             For Business
           </a>
-          <a href="#" className="block hover:text-lime-400">
-            Alumni
+          <a href="#profile" className="block hover:text-lime-400">
+            About
           </a>
           <a href="#" className="block hover:text-lime-400">
             Newsletter
