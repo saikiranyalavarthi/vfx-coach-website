@@ -14,8 +14,23 @@ export default function ContactSection() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    alert("Thank you! Your message has been sent.");
+
+    // Format WhatsApp message
+    const text = `👋 Hello, I want to connect with you.%0A
+----------------------%0A
+👤 Name: ${formData.name}%0A
+📧 Email: ${formData.email}%0A
+📱 Mobile: ${formData.mobile}%0A
+💬 Message: ${formData.message}%0A
+----------------------`;
+
+    // Your WhatsApp number
+    const whatsappNumber = "9000999551";
+
+    // Open WhatsApp with pre-filled message
+    window.open(`https://wa.me/91${whatsappNumber}?text=${text}`, "_blank");
+
+    // Reset form after sending
     setFormData({ name: "", email: "", mobile: "", message: "" });
   };
 
@@ -30,8 +45,8 @@ export default function ContactSection() {
           Contact Us
         </h2>
         <p className="mt-4 text-gray-300 max-w-2xl mx-auto">
-          Have questions or want to learn more? Send us a message and we’ll get
-          back to you as soon as possible.
+          Fill in the form below and your details will be sent directly to our
+          WhatsApp.
         </p>
       </div>
 
@@ -78,7 +93,7 @@ export default function ContactSection() {
           type="submit"
           className="w-full py-3 rounded-full bg-gradient-to-r from-lime-400 to-green-500 text-black font-semibold shadow-lg hover:scale-105 transition transform"
         >
-          Send Message
+          Send via WhatsApp
         </button>
       </form>
     </section>
