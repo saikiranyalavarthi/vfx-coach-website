@@ -5,7 +5,8 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-gradient-to-r from-gray-800 to-gray-700 px-6 py-6 rounded-1xl shadow-md">
+    // <nav className="bg-gradient-to-r from-gray-800 to-gray-700 px-6 py-6 rounded-1xl shadow-md">
+    <nav className="bg-black bg-opacity-70 px-6 py-6 rounded-1xl shadow-md">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center space-x-2 text-white font-semibold text-lg">
@@ -20,7 +21,11 @@ const Navbar = () => {
             <span className="w-2 h-2 rounded-full bg-lime-400"></span>
             <span className="w-2 h-2 rounded-full border border-white"></span>
           </div> */}
-          <span>VFX Coach</span>
+          <img
+            src="/vfxlogo.jpg" // 👉 replace with your actual logo path
+            alt="VFX Coach Logo"
+            className="h-20 w-auto object-contain"
+          />
         </div>
 
         {/* Desktop Menu */}
@@ -34,16 +39,18 @@ const Navbar = () => {
           <a href="#" className="hover:text-lime-400">
             Newsletter
           </a>
-          <a href="#" className="hover:text-lime-400">
+          <a href="#contact" className="block hover:text-lime-400">
             Contact Us
           </a>
         </div>
 
         {/* Button */}
         <div className="hidden md:block">
-          <button className="bg-lime-400 text-black px-5 py-2 rounded-lg font-semibold hover:bg-lime-300 transition">
-            Explore Courses
-          </button>
+          <a href="#programs">
+            <button className="mt-6 w-full md:w-auto bg-lime-400 text-black px-5 py-2 rounded-lg font-semibold hover:bg-lime-300 transition cursor-pointer">
+              Explore Courses
+            </button>
+          </a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -66,7 +73,7 @@ const Navbar = () => {
           <a href="#" className="block hover:text-lime-400">
             Newsletter
           </a>
-          <a href="#" className="block hover:text-lime-400">
+          <a href="#contact" className="block hover:text-lime-400">
             Contact Us
           </a>
           <a href="#programs">

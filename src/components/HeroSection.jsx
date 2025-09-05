@@ -19,7 +19,18 @@ const HeroSection = () => {
             advantage & tangible outcomes.
           </p>
           <div className="flex justify-center lg:justify-start gap-4">
-            <button className="bg-lime-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-lime-500 transition">
+            {/* <button className="bg-lime-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-lime-500 transition">
+              Explore Courses
+            </button> */}
+            <button
+              onClick={() => {
+                const element = document.getElementById("programs");
+                if (element) {
+                  element.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
+              className="bg-lime-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-lime-500 transition transform hover:scale-105 cursor-pointer"
+            >
               Explore Courses
             </button>
             <button className="bg-gray-800 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-700 transition">
