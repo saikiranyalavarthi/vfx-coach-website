@@ -93,7 +93,7 @@ export default function ContactSection() {
           type="submit"
           className="w-full py-3 rounded-full bg-gradient-to-r from-lime-400 to-green-500 text-black font-semibold shadow-lg hover:scale-105 transition transform"
         >
-          Send via WhatsApp
+          Submit
         </button>
       </form>
     </section>
