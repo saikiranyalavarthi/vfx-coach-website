@@ -29,7 +29,7 @@ const HeroSection = () => {
                   element.scrollIntoView({ behavior: "smooth" });
                 }
               }}
-              className="bg-lime-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-lime-500 transition transform hover:scale-105 cursor-pointer"
+              className="bg-lime-500 text-black px-6 py-3 rounded-lg font-semibold hover:brightness-90 transition transform hover:scale-105 cursor-pointer"
             >
               Explore Courses
             </button>

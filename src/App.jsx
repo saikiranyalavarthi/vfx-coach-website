@@ -7,6 +7,7 @@ import UpskillSection from "./components/UpskillSection";
 import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
 import ProgramsSection from "./components/ProgramsSection";
+import BannerSection from "./components/BannerSection";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <ExperienceSection />
       <ProgramsSection />
       <UpskillSection />
+      <BannerSection />
       <ContactSection />
       <Footer />
     </div>
