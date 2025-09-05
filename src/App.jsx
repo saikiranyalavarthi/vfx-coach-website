@@ -8,6 +8,9 @@ import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
 import ProgramsSection from "./components/ProgramsSection";
 import BannerSection from "./components/BannerSection";
+import WorkshopSection from "./components/WorkshopSection";
+import FellowshipSection from "./components/FellowshipSection";
+import NewsletterSection from "./components/NewsletterSection";
 
 const App = () => {
   return (
@@ -16,8 +19,11 @@ const App = () => {
       <HeroSection />
       <ExperienceSection />
       <ProgramsSection />
+      <FellowshipSection />
+      <WorkshopSection />
       <UpskillSection />
       <BannerSection />
+      <NewsletterSection />
       <ContactSection />
       <Footer />
     </div>
