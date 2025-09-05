@@ -11,6 +11,9 @@ import BannerSection from "./components/BannerSection";
 import WorkshopSection from "./components/WorkshopSection";
 import FellowshipSection from "./components/FellowshipSection";
 import NewsletterSection from "./components/NewsletterSection";
+import CourseFeatures from "./components/CourseFeatures";
+import StatsSection from "./components/StatsSection";
+import ProfileCard from "./components/ProfileCard";
 
 const App = () => {
   return (
@@ -19,11 +22,14 @@ const App = () => {
       <HeroSection />
       <ExperienceSection />
       <ProgramsSection />
+      <CourseFeatures />
       <FellowshipSection />
       <WorkshopSection />
       <UpskillSection />
       <BannerSection />
+      <StatsSection />
       <NewsletterSection />
+      <ProfileCard />
       <ContactSection />
       <Footer />
     </div>
