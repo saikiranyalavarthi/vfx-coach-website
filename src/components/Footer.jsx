@@ -26,18 +26,9 @@ const socialIcons = [
         strokeWidth={2}
         viewBox="0 0 24 24"
       >
-        <rect
-          x={2}
-          y={2}
-          width={20}
-          height={20}
-          rx={5}
-          ry={5}
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
+        <rect x={2} y={2} width={20} height={20} rx={5} ry={5} />
         <path d="M16 11.37A4 4 0 1112.63 8a4 4 0 013.37 3.37z" />
-        <line x1={17.5} y1={6.5} x2={17.5} y2={6.5} />
+        <circle cx="17.5" cy="6.5" r="1" />
       </svg>
     ),
   },
@@ -53,10 +44,10 @@ const socialIcons = [
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-gradient-to-b from-black to-green-900/80 text-white ">
+    <footer className="w-full bg-gradient-to-b from-black to-green-900/80 text-white">
       <div className="p-8 max-w-7xl mx-auto">
         {/* Top Section */}
-        <div className="flex flex-col md:flex-row md:justify-between border-b border-gray-600 pb-8 mb-6">
+        <div className="flex flex-col md:flex-row md:justify-between border-b border-gray-700 pb-8 mb-6">
           {/* Logo & Info */}
           <div className="md:w-1/4 mb-8 md:mb-0">
             <div className="flex items-center space-x-3 mb-3">
@@ -68,15 +59,18 @@ export default function Footer() {
           </div>
 
           {/* Footer Links */}
-          <div className="flex flex-wrap gap-x-12 gap-y-6 justify-between md:w-2/3 md:pl-12 border-t border-gray-600 pt-6 md:border-t-0 md:pt-0">
+          <div className="flex flex-wrap gap-x-12 gap-y-6 justify-between md:w-2/3 md:pl-12">
             {Object.entries(footerLinks).map(([section, links]) => (
-              <div key={section} className="min-w-[120px]">
-                <h4 className="font-semibold mb-3 uppercase text-sm">
+              <div key={section} className="min-w-[140px]">
+                <h4 className="font-semibold mb-3 uppercase text-sm tracking-wide">
                   {section}
                 </h4>
                 <ul className="space-y-2 text-gray-400 text-sm cursor-pointer">
                   {links.map((link) => (
-                    <li key={link} className="hover:text-lime-400 transition">
+                    <li
+                      key={link}
+                      className="hover:text-lime-400 transition-colors"
+                    >
                       {link}
                     </li>
                   ))}
@@ -94,12 +88,12 @@ export default function Footer() {
               <button
                 key={name}
                 aria-label={name}
-                className="bg-black bg-opacity-40 hover:bg-opacity-70 p-2 rounded transition"
+                className="bg-black/40 hover:bg-lime-500 hover:text-black p-2 rounded-full transition transform hover:scale-110"
               >
                 {icon}
               </button>
             ))}
-            <select className="text-black px-3 py-1 rounded bg-gray-200">
+            <select className="text-white bg-gray-800 px-3 py-1 rounded focus:ring-2 focus:ring-lime-400">
               <option value="INR">INR</option>
               <option value="USD">USD</option>
               <option value="EUR">EUR</option>
@@ -111,7 +105,7 @@ export default function Footer() {
             className="flex flex-col md:flex-row md:items-center md:space-x-4 w-full md:w-auto"
             onSubmit={(e) => e.preventDefault()}
           >
-            <div className="flex flex-col justify-center mb-3 md:mb-0">
+            <div className="flex flex-col mb-3 md:mb-0">
               <label className="font-semibold text-white" htmlFor="email">
                 Join our newsletter
               </label>
@@ -123,13 +117,14 @@ export default function Footer() {
               <input
                 id="email"
                 type="email"
+                aria-label="Email address"
                 placeholder="Enter your email"
-                className="px-4 py-2 rounded-l-md focus:outline-none w-full"
+                className="px-4 py-2 rounded-l-md md:rounded-l-md md:rounded-r-none rounded-full md:rounded-full-0 text-black w-full focus:outline-none focus:ring-2 focus:ring-lime-400"
                 required
               />
               <button
                 type="submit"
-                className="bg-lime-400 text-black px-6 rounded-r-md font-semibold hover:bg-lime-500 transition"
+                className="bg-lime-400 text-black px-6 rounded-r-md md:rounded-r-md md:rounded-l-none rounded-full font-semibold hover:bg-lime-500 transition"
               >
                 Subscribe
               </button>

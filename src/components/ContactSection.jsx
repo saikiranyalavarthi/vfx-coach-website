@@ -7,6 +7,7 @@ export default function ContactSection() {
     mobile: "",
     message: "",
   });
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -15,7 +16,19 @@ export default function ContactSection() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Encode the WhatsApp message
+    // Validate
+    if (
+      !formData.name.trim() ||
+      !formData.email.trim() ||
+      !formData.mobile.trim() ||
+      !formData.message.trim()
+    ) {
+      alert("Please fill all fields properly.");
+      return;
+    }
+
+    setLoading(true);
+
     const text = encodeURIComponent(
       `👋 Hello, I want to connect with you.\n
 ----------------------\n
@@ -26,22 +39,16 @@ export default function ContactSection() {
 ----------------------`
     );
 
-    // Your WhatsApp number (with country code 91 for India)
     const whatsappNumber = "919000999551";
 
-    // Open WhatsApp API (works on both mobile + desktop)
-    window.open(
-      `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${text}`,
-      "_blank"
-    );
+    window.open(`https://wa.me/${whatsappNumber}?text=${text}`, "_blank");
 
-    // Reset form after sending
     setFormData({ name: "", email: "", mobile: "", message: "" });
+    setLoading(false);
   };
 
   return (
     <section id="contact" className="bg-black text-white py-16 px-6 md:px-14">
-      {/* Header */}
       <div className="max-w-4xl mx-auto text-center mb-12">
         <p className="uppercase text-sm font-semibold tracking-wide text-green-400">
           GET IN TOUCH
@@ -55,7 +62,6 @@ export default function ContactSection() {
         </p>
       </div>
 
-      {/* Contact Form */}
       <form onSubmit={handleSubmit} className="max-w-3xl mx-auto grid gap-6">
         <input
           type="text"
@@ -63,6 +69,7 @@ export default function ContactSection() {
           value={formData.name}
           onChange={handleChange}
           placeholder="Your Name"
+          aria-label="Your Name"
           className="w-full px-4 py-3 rounded-md bg-gray-900 border border-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-lime-400"
           required
         />
@@ -72,6 +79,7 @@ export default function ContactSection() {
           value={formData.email}
           onChange={handleChange}
           placeholder="Your Email"
+          aria-label="Your Email"
           className="w-full px-4 py-3 rounded-md bg-gray-900 border border-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-lime-400"
           required
         />
@@ -81,6 +89,8 @@ export default function ContactSection() {
           value={formData.mobile}
           onChange={handleChange}
           placeholder="Your Mobile Number"
+          aria-label="Your Mobile Number"
+          pattern="[0-9]{10}"
           className="w-full px-4 py-3 rounded-md bg-gray-900 border border-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-lime-400"
           required
         />
@@ -89,6 +99,7 @@ export default function ContactSection() {
           value={formData.message}
           onChange={handleChange}
           placeholder="Your Message"
+          aria-label="Your Message"
           rows={5}
           className="w-full px-4 py-3 rounded-md bg-gray-900 border border-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-lime-400"
           required
@@ -96,9 +107,12 @@ export default function ContactSection() {
 
         <button
           type="submit"
-          className="w-full py-3 rounded-full bg-gradient-to-r from-lime-400 to-green-500 text-black font-semibold shadow-lg hover:scale-105 transition transform"
+          disabled={loading}
+          className={`w-full py-3 rounded-full bg-gradient-to-r from-lime-400 to-green-500 text-black font-semibold shadow-lg transition transform ${
+            loading ? "opacity-60 cursor-not-allowed" : "hover:scale-105"
+          }`}
         >
-          Submit
+          {loading ? "Sending..." : "Submit"}
         </button>
       </form>
     </section>
