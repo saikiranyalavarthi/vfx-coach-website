@@ -26,12 +26,6 @@ const NewsletterSection = () => {
               required
               className="flex-1 px-4 py-3 rounded-md text-black focus:outline-none focus:ring-2 focus:ring-lime-400"
             />
-            <button
-              type="submit"
-              className="bg-lime-400 text-black font-semibold px-6 py-3 rounded-md hover:bg-lime-500 transition"
-            >
-              Subscribe
-            </button>
           </form>
         </div>
 
