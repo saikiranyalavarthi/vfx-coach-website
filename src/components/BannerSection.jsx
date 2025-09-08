@@ -3,32 +3,33 @@ import React, { useState, useEffect } from "react";
 const bannersData = [
   {
     quote:
-      "AI is the most powerful technology force of our time. It's enabling breakthroughs in every industry, from healthcare to transportation to finance.",
-    author: "Jensen Huang",
-    role: "Founder, NVIDIA",
-    img: "image1.jpg",
+      "Imagination is a force that can actually manifest a reality. Don't put limitations on yourself. Others will do that for you",
+
+    author: "James Cameron",
+    role: "Film Director,USA",
+    img: "image1.png",
   },
   {
     quote:
       "Innovation distinguishes between a leader and a follower. Always push the boundaries.",
     author: "Steve Jobs",
     role: "Co-founder, Apple",
-    img: "image2.jpg",
+    img: "image2.png",
   },
   {
     quote:
-      "The future belongs to those who learn more skills and combine them in creative ways.",
-    author: "Robert Greene",
-    role: "Author",
-    img: "image3.jpg",
+      "Creating is one thing telling the story is one thing. I see myself more as a storyteller than a story creator.",
+    author: "S. S. Rajamouli",
+    role: "Film Director",
+    img: "image3.png",
   },
-  {
-    quote:
-      "AI is reshaping our world, and those who embrace it will define the next era.",
-    author: "Satya Nadella",
-    role: "CEO, Microsoft",
-    img: "image4.jpg",
-  },
+  // {
+  //   quote:
+  //     "AI is reshaping our world, and those who embrace it will define the next era.",
+  //   author: "Satya Nadella",
+  //   role: "CEO, Microsoft",
+  //   img: "image4.jpg",
+  // },
 ];
 
 const BannerSection = () => {
@@ -47,7 +48,7 @@ const BannerSection = () => {
   }, []);
 
   return (
-    <section className="relative w-full h-screen bg-black overflow-hidden">
+    <section className="relative w-full h-[500px] bg-black overflow-hidden">
       {/* Slides */}
       {bannersData.map((banner, idx) => (
         <div
@@ -62,7 +63,7 @@ const BannerSection = () => {
           <img
             src={banner.img}
             alt={banner.author}
-            className="w-full h-full object-cover"
+            className="w-[400px] h-[500px] object-cover justify-center mx-auto mt-10 rounded-lg shadow-lg"
           />
 
           {/* Overlay */}
