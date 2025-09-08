@@ -35,7 +35,7 @@ const ExperienceSection = () => {
 
       {/* Header */}
       <div className="relative z-10 max-w-6xl mx-auto text-center mb-16">
-        <p className="uppercase tracking-widest text-lime-400 text-sm mb-3">
+        <p className="uppercase tracking-widest text-[#FF991C] text-sm mb-3">
           AI FOR ALL STAGES
         </p>
         <h2 className="text-4xl md:text-5xl font-serif font-bold">
@@ -59,7 +59,7 @@ const ExperienceSection = () => {
             key={idx}
             className="bg-white/5 backdrop-blur-md rounded-2xl p-8 border border-white/10 hover:border-lime-400 hover:scale-105 transform transition-all duration-300"
           >
-            <h3 className="text-3xl font-bold mb-3 text-lime-300">{years}</h3>
+            <h3 className="text-3xl font-bold mb-3 text-[#FF991C]">{years}</h3>
             <p className="text-gray-300 whitespace-pre-line leading-relaxed">
               {description}
             </p>

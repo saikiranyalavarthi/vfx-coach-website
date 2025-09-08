@@ -72,7 +72,7 @@ const WorkshopCard = ({
           </span>
         </div>
 
-        <button className="mt-4 bg-lime-500 text-white px-5 py-2 rounded-lg font-semibold hover:brightness-90 transition transform hover:scale-105">
+        <button className="mt-4 bg-[#FF991C] text-white px-5 py-2 rounded-lg font-semibold hover:brightness-90 transition transform hover:scale-105">
           <Link to="/contact">Enroll Now</Link>
         </button>
       </div>

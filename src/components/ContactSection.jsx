@@ -50,7 +50,7 @@ export default function ContactSection() {
   return (
     <section id="contact" className="bg-black text-white py-16 px-6 md:px-14">
       <div className="max-w-4xl mx-auto text-center mb-12">
-        <p className="uppercase text-sm font-semibold tracking-wide text-green-400">
+        <p className="uppercase text-sm font-semibold tracking-wide text-[#FF991C]">
           GET IN TOUCH
         </p>
         <h2 className="text-4xl md:text-5xl font-serif font-bold mt-2">
@@ -108,7 +108,7 @@ export default function ContactSection() {
         <button
           type="submit"
           disabled={loading}
-          className={`w-full py-3 rounded-full bg-gradient-to-r from-lime-400 to-green-500 text-black font-semibold shadow-lg transition transform ${
+          className={`w-full py-3 rounded-full bg-[#FF991C] text-black font-semibold shadow-lg transition transform ${
             loading ? "opacity-60 cursor-not-allowed" : "hover:scale-105"
           }`}
         >

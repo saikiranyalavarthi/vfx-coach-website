@@ -63,7 +63,7 @@ const ProfileCard = () => {
             href="https://www.linkedin.com/in/arun-kumar-etikapally-6a823239/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-lime-500 text-black px-6 py-3 rounded-lg font-semibold hover:bg-lime-400 transition"
+            className="inline-block bg-[#FF991C] text-black px-6 py-3 rounded-lg font-semibold hover:bg-[#FF991C] transition"
           >
             Connect on LinkedIn
           </a>

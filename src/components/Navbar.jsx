@@ -29,19 +29,19 @@ const Navbar = () => {
           </a> */}
           <a
             href="#profile"
-            className="hover:text-lime-400 transition-colors duration-300"
+            className="hover:text-[#FF991C] transition-colors duration-300"
           >
             About
           </a>
           <a
             href="#Courses"
-            className="hover:text-lime-400 transition-colors duration-300"
+            className="hover:text-[#FF991C] transition-colors duration-300"
           >
             Courses
           </a>
           <a
             href="#contact"
-            className="hover:text-lime-400 transition-colors duration-300"
+            className="hover:text-[#FF991C] transition-colors duration-300"
           >
             Contact Us
           </a>
@@ -50,7 +50,7 @@ const Navbar = () => {
         {/* Desktop Button */}
         <div className="hidden md:block">
           <a href="#programs">
-            <button className="bg-lime-400 text-black px-5 py-2 rounded-lg font-semibold hover:bg-lime-300 transition cursor-pointer shadow-md">
+            <button className="bg-[#FF991C] text-black px-5 py-2 rounded-lg font-semibold hover:bg-[#FF991C] transition cursor-pointer shadow-md">
               Explore Courses
             </button>
           </a>
@@ -70,17 +70,17 @@ const Navbar = () => {
           {/* <a href="#" className="block hover:text-lime-400">
             For Business
           </a> */}
-          <a href="#profile" className="block hover:text-lime-400">
+          <a href="#profile" className="block hover:text-[#FF991C]">
             About
           </a>
-          <a href="#Courses" className="block hover:text-lime-400">
+          <a href="#Courses" className="block hover:text-[#FF991C]">
             Courses
           </a>
-          <a href="#contact" className="block hover:text-lime-400">
+          <a href="#contact" className="block hover:text-[#FF991C]">
             Contact Us
           </a>
           <a href="#programs">
-            <button className="mt-3 w-full bg-lime-400 text-black px-5 py-2 rounded-lg font-semibold hover:bg-lime-300 transition shadow-md">
+            <button className="mt-3 w-full bg-[#FF991C] text-black px-5 py-2 rounded-lg font-semibold hover:bg-[#FF991C] transition shadow-md">
               Explore Courses
             </button>
           </a>

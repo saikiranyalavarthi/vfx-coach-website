@@ -84,7 +84,7 @@ const HeroSection = () => {
         <div className="w-full lg:w-1/2 text-center lg:text-left flex flex-col items-center lg:items-start justify-center gap-6 py-6 sm:py-8">
           <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold leading-snug sm:leading-tight">
             Stay ahead in the{" "}
-            <span className="text-lime-400">
+            <span className="text-[#FF991C]">
               AI-First World & Become a VFX PRO with our VFX Intro Workshop
             </span>
           </h1>
@@ -102,11 +102,11 @@ const HeroSection = () => {
                   element.scrollIntoView({ behavior: "smooth" });
                 }
               }}
-              className="bg-lime-500 text-black px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold hover:brightness-90 transition transform hover:scale-105 cursor-pointer"
+              className="bg-[#FF991C] text-black px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold hover:brightness-90 transition transform hover:scale-105 cursor-pointer"
             >
               Explore Courses
             </button>
-            <button className="bg-gray-800 text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold hover:bg-gray-700 transition cursor-pointer">
+            <button className="bg-[#FF991C] text-black px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold hover:bg-[#FF991C] transition cursor-pointer">
               <Link to="/contact">Contact Us</Link>
             </button>
           </div>

@@ -32,7 +32,7 @@ const MentorAvatars = ({ mentors, extraCount }) => {
           loading="lazy"
         />
       ))}
-      <div className="w-10 h-10 rounded-full border-2 border-black/80 bg-lime-400 flex items-center justify-center text-black font-semibold text-sm shadow-md">
+      <div className="w-10 h-10 rounded-full border-2 border-black/80 bg-[#FF991C] flex items-center justify-center text-black font-semibold text-sm shadow-md">
         +{extraCount}
       </div>
     </div>
@@ -88,7 +88,7 @@ const FellowshipBanner = ({
           Multiple mentors from <span className="text-lime-400">Google</span>,{" "}
           <span className="text-lime-400">Adobe</span> & more
         </p>
-        <button className="bg-lime-400 text-black font-bold rounded-lg px-6 py-2 hover:bg-lime-500 hover:shadow-lg transition">
+        <button className="bg-[#FF991C] text-black font-bold rounded-lg px-6 py-2 hover:bg-[#FF991C] hover:shadow-lg transition">
           Explore Courses
         </button>
       </div>

@@ -43,7 +43,7 @@ export default function ProgramsSection() {
             key={id}
             className="bg-gray-900 bg-opacity-20 p-6 rounded-xl hover:bg-opacity-40 transition shadow-lg"
           >
-            <h3 className="text-xl font-semibold text-lime-400 mb-2">
+            <h3 className="text-xl font-semibold text-[#FF991C] mb-2">
               {category}
             </h3>
             <p className="text-sm text-gray-300 mb-4">{duration}</p>

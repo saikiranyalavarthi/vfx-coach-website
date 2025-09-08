@@ -10,42 +10,42 @@ import {
 const features = [
   {
     icon: (
-      <MessageSquare className="w-10 h-10 text-lime-500 transition-colors duration-300 group-hover:text-lime-400" />
+      <MessageSquare className="w-10 h-10 text-[#FF991C] transition-colors duration-300 group-hover:text-lime-400" />
     ),
     title: "Live Doubt Solving",
     description: "Get real-time answers from experts.",
   },
   {
     icon: (
-      <Briefcase className="w-10 h-10 text-lime-500 transition-colors duration-300 group-hover:text-lime-400" />
+      <Briefcase className="w-10 h-10 text-[#FF991C] transition-colors duration-300 group-hover:text-lime-400" />
     ),
     title: "Real-Time Projects",
     description: "Gain hands-on experience with real-world projects.",
   },
   {
     icon: (
-      <BookOpen className="w-10 h-10 text-lime-500 transition-colors duration-300 group-hover:text-lime-400" />
+      <BookOpen className="w-10 h-10 text-[#FF991C] transition-colors duration-300 group-hover:text-lime-400" />
     ),
     title: "Hands-on Lab Guides",
     description: "Practical lab sessions to apply your skills.",
   },
   {
     icon: (
-      <FileText className="w-10 h-10 text-lime-500 transition-colors duration-300 group-hover:text-lime-400" />
+      <FileText className="w-10 h-10 text-[#FF991C] transition-colors duration-300 group-hover:text-lime-400" />
     ),
     title: "100+ Assessments",
     description: "Regular testing to track your progress.",
   },
   {
     icon: (
-      <Layers className="w-10 h-10 text-lime-500 transition-colors duration-300 group-hover:text-lime-400" />
+      <Layers className="w-10 h-10 text-[#FF991C] transition-colors duration-300 group-hover:text-lime-400" />
     ),
     title: "Guided Projects",
     description: "Step-by-step project guidance from industry pros.",
   },
   {
     icon: (
-      <Award className="w-10 h-10 text-lime-500 transition-colors duration-300 group-hover:text-lime-400" />
+      <Award className="w-10 h-10 text-[#FF991C] transition-colors duration-300 group-hover:text-lime-400" />
     ),
     title: "Certification",
     description: "Earn a certificate to validate your skills.",
@@ -61,7 +61,7 @@ export default function CourseFeatures() {
           <h2 className="text-3xl md:text-4xl font-bold">
             Our Course Features
           </h2>
-          <div className="mt-2 h-1 w-24 bg-lime-400 mx-auto rounded-full"></div>
+          <div className="mt-2 h-1 w-24 bg-[#FF991C] mx-auto rounded-full"></div>
         </div>
 
         {/* Features Grid */}

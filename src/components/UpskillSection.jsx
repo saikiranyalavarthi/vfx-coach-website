@@ -8,7 +8,7 @@ const features = [
       "Master new skills on your schedule with our flexible, self-paced video content.",
     icon: (
       <svg
-        className="w-8 h-8 text-lime-400"
+        className="w-8 h-8 text-[#FF991C]"
         fill="none"
         stroke="currentColor"
         strokeWidth={2}
@@ -29,7 +29,7 @@ const features = [
     description: "Overcome challenges fast with dedicated mentor office hours.",
     icon: (
       <svg
-        className="w-8 h-8 text-lime-400"
+        className="w-8 h-8 text-[#FF991C]"
         fill="none"
         stroke="currentColor"
         strokeWidth={2}
@@ -56,7 +56,7 @@ const features = [
       "Gain practical skills through our project-driven approach for real results.",
     icon: (
       <svg
-        className="w-8 h-8 text-lime-400"
+        className="w-8 h-8 text-[#FF991C]"
         fill="none"
         stroke="currentColor"
         strokeWidth={2}
@@ -83,7 +83,7 @@ const features = [
       "Tap into our vibrant network of learners, enhancing your learning experience.",
     icon: (
       <svg
-        className="w-8 h-8 text-lime-400"
+        className="w-8 h-8 text-[#FF991C]"
         fill="none"
         stroke="currentColor"
         strokeWidth={2}
@@ -115,7 +115,7 @@ export default function UpskillSection() {
           for sustained business growth.
         </p>
 
-        <button className="mt-8 mb-12 px-8 py-3 rounded-full bg-gradient-to-r from-lime-400 to-green-500 text-black font-semibold shadow-lg hover:scale-105 transition transform">
+        <button className="mt-8 mb-12 px-8 py-3 rounded-full bg-[#FF991C] text-black font-semibold shadow-lg hover:scale-105 transition transform">
           Upskill Your Team
         </button>
 
