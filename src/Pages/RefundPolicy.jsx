@@ -14,7 +14,9 @@ const RefundPolicy = () => {
         </p>
 
         <div className="prose prose-invert max-w-none text-justify space-y-6">
-          <h2 className="text-2xl font-semibold text-lime-400">Introduction</h2>
+          <h2 className="text-2xl font-semibold text-[#FF991C]">
+            Introduction
+          </h2>
           <p>
             At <b>VFX Coach Pvt. Ltd.</b>, we strive to provide the best
             learning experience to our students. This Refund Policy outlines the
@@ -22,7 +24,7 @@ const RefundPolicy = () => {
             and training programs offered through our platform.
           </p>
 
-          <h2 className="text-2xl font-semibold text-lime-400">
+          <h2 className="text-2xl font-semibold text-[#FF991C]">
             Eligibility for Refund
           </h2>
           <p>Refunds are applicable only under the following conditions:</p>
@@ -41,7 +43,7 @@ const RefundPolicy = () => {
             </li>
           </ul>
 
-          <h2 className="text-2xl font-semibold text-lime-400">
+          <h2 className="text-2xl font-semibold text-[#FF991C]">
             Non-Refundable Items
           </h2>
           <p>
@@ -54,7 +56,7 @@ const RefundPolicy = () => {
             <li>Payments made beyond the refund eligibility period</li>
           </ul>
 
-          <h2 className="text-2xl font-semibold text-lime-400">
+          <h2 className="text-2xl font-semibold text-[#FF991C]">
             How to Request a Refund
           </h2>
           <p>
@@ -64,7 +66,7 @@ const RefundPolicy = () => {
             within <b>5–7 business days</b>.
           </p>
 
-          <h2 className="text-2xl font-semibold text-lime-400">
+          <h2 className="text-2xl font-semibold text-[#FF991C]">
             Mode of Refund
           </h2>
           <p>
@@ -74,7 +76,7 @@ const RefundPolicy = () => {
             provider.
           </p>
 
-          <h2 className="text-2xl font-semibold text-lime-400">
+          <h2 className="text-2xl font-semibold text-[#FF991C]">
             Changes to this Policy
           </h2>
           <p>
@@ -83,7 +85,7 @@ const RefundPolicy = () => {
             updated date.
           </p>
 
-          <h2 className="text-2xl font-semibold text-lime-400">Contact Us</h2>
+          <h2 className="text-2xl font-semibold text-[#FF991C]">Contact Us</h2>
           <p>
             If you have questions regarding this Refund Policy, please contact
             us at:

@@ -14,7 +14,9 @@ const PrivacyPolicy = () => {
         </p>
 
         <div className="prose prose-invert max-w-none text-justify space-y-6">
-          <h2 className="text-2xl font-semibold text-lime-400">Introduction</h2>
+          <h2 className="text-2xl font-semibold text-[#FF991C]">
+            Introduction
+          </h2>
           <p>
             At <b>VFX Coach Pvt. Ltd.</b>, we respect your privacy and are
             committed to protecting the personal information you share with us.
@@ -23,7 +25,7 @@ const PrivacyPolicy = () => {
             participate in our training programs.
           </p>
 
-          <h2 className="text-2xl font-semibold text-lime-400">
+          <h2 className="text-2xl font-semibold text-[#FF991C]">
             Information We Collect
           </h2>
           <p>
@@ -33,7 +35,7 @@ const PrivacyPolicy = () => {
             address, browser type, and usage statistics to improve our services.
           </p>
 
-          <h2 className="text-2xl font-semibold text-lime-400">
+          <h2 className="text-2xl font-semibold text-[#FF991C]">
             How We Use Your Information
           </h2>
           <p>The data we collect is used for the following purposes:</p>
@@ -47,7 +49,7 @@ const PrivacyPolicy = () => {
             <li>To ensure compliance with our Terms and Conditions</li>
           </ul>
 
-          <h2 className="text-2xl font-semibold text-lime-400">
+          <h2 className="text-2xl font-semibold text-[#FF991C]">
             Data Protection
           </h2>
           <p>
@@ -57,7 +59,7 @@ const PrivacyPolicy = () => {
             that no online system is completely secure.
           </p>
 
-          <h2 className="text-2xl font-semibold text-lime-400">
+          <h2 className="text-2xl font-semibold text-[#FF991C]">
             Sharing of Information
           </h2>
           <p>
@@ -67,7 +69,7 @@ const PrivacyPolicy = () => {
             services, and only to the extent necessary.
           </p>
 
-          <h2 className="text-2xl font-semibold text-lime-400">Your Rights</h2>
+          <h2 className="text-2xl font-semibold text-[#FF991C]">Your Rights</h2>
           <p>As a user, you have the right to:</p>
           <ul className="list-disc pl-6 space-y-2">
             <li>Access and update your personal information</li>
@@ -75,14 +77,14 @@ const PrivacyPolicy = () => {
             <li>Opt out of promotional emails at any time</li>
           </ul>
 
-          <h2 className="text-2xl font-semibold text-lime-400">Cookies</h2>
+          <h2 className="text-2xl font-semibold text-[#FF991C]">Cookies</h2>
           <p>
             Our website may use cookies and similar technologies to enhance your
             browsing experience. You may disable cookies in your browser
             settings, but this could limit certain features of the platform.
           </p>
 
-          <h2 className="text-2xl font-semibold text-lime-400">
+          <h2 className="text-2xl font-semibold text-[#FF991C]">
             Governing Law
           </h2>
           <p>
@@ -91,7 +93,7 @@ const PrivacyPolicy = () => {
             the courts in Hyderabad, Telangana, India.
           </p>
 
-          <h2 className="text-2xl font-semibold text-lime-400">Contact Us</h2>
+          <h2 className="text-2xl font-semibold text-[#FF991C]">Contact Us</h2>
           <p>
             If you have questions about this Privacy Policy or our data
             practices, you may contact us at:

@@ -52,7 +52,7 @@ export default function ContactPage() {
     <div className="min-h-screen bg-black text-white flex flex-col">
       {/* Hero / Heading Section */}
       <header className="py-16 px-6 md:px-14 text-center mt-12">
-        <p className="uppercase text-sm font-semibold tracking-wide text-green-400">
+        <p className="uppercase text-sm font-semibold tracking-wide text-[#FF991C]">
           GET IN TOUCH
         </p>
         <h1 className="text-4xl md:text-5xl font-serif font-bold mt-2">
@@ -112,7 +112,7 @@ export default function ContactPage() {
           <button
             type="submit"
             disabled={loading}
-            className={`w-full py-3 rounded-full bg-gradient-to-r from-lime-400 to-green-500 text-black font-semibold shadow-lg transition transform ${
+            className={`w-full py-3 rounded-full bg-[#FF991C] text-black font-semibold shadow-lg transition transform ${
               loading ? "opacity-60 cursor-not-allowed" : "hover:scale-105"
             }`}
           >

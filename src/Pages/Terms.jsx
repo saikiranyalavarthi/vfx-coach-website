@@ -15,7 +15,9 @@ const TermsAndConditions = () => {
 
         {/* Scrollable Content */}
         <div className="prose prose-invert max-w-none text-justify space-y-6">
-          <h2 className="text-2xl font-semibold text-lime-400">Introduction</h2>
+          <h2 className="text-2xl font-semibold text-[#FF991C]">
+            Introduction
+          </h2>
           <p>
             Welcome to <b>VFX Coach</b>, a platform dedicated to helping
             learners master the art and science of Visual Effects. These Terms
@@ -25,7 +27,7 @@ const TermsAndConditions = () => {
             with and be bound by these Terms.
           </p>
 
-          <h2 className="text-2xl font-semibold text-lime-400">
+          <h2 className="text-2xl font-semibold text-[#FF991C]">
             Acceptance of Terms
           </h2>
           <p>
@@ -35,7 +37,7 @@ const TermsAndConditions = () => {
             please do not access our website or enroll in our programs.
           </p>
 
-          <h2 className="text-2xl font-semibold text-lime-400">
+          <h2 className="text-2xl font-semibold text-[#FF991C]">
             Services Provided
           </h2>
           <p>
@@ -46,7 +48,7 @@ const TermsAndConditions = () => {
             Access to certain features may require payment of course fees.
           </p>
 
-          <h2 className="text-2xl font-semibold text-lime-400">
+          <h2 className="text-2xl font-semibold text-[#FF991C]">
             Enrollment and Payments
           </h2>
           <p>
@@ -57,7 +59,9 @@ const TermsAndConditions = () => {
             course materials.
           </p>
 
-          <h2 className="text-2xl font-semibold text-lime-400">User Conduct</h2>
+          <h2 className="text-2xl font-semibold text-[#FF991C]">
+            User Conduct
+          </h2>
           <p>
             You agree to use the VFX Coach platform responsibly and for the sole
             purpose of learning and skill development. Any misuse of course
@@ -66,7 +70,7 @@ const TermsAndConditions = () => {
             of your access.
           </p>
 
-          <h2 className="text-2xl font-semibold text-lime-400">
+          <h2 className="text-2xl font-semibold text-[#FF991C]">
             Intellectual Property
           </h2>
           <p>
@@ -76,7 +80,7 @@ const TermsAndConditions = () => {
             redistribute our content without prior written consent.
           </p>
 
-          <h2 className="text-2xl font-semibold text-lime-400">
+          <h2 className="text-2xl font-semibold text-[#FF991C]">
             Governing Law
           </h2>
           <p>
@@ -85,7 +89,7 @@ const TermsAndConditions = () => {
             exclusive jurisdiction of the courts in Hyderabad, Telangana, India.
           </p>
 
-          <h2 className="text-2xl font-semibold text-lime-400">Contact</h2>
+          <h2 className="text-2xl font-semibold text-[#FF991C]">Contact</h2>
           <p>
             For questions about these Terms, enrollment issues, or any
             clarifications regarding our training services, you can reach us at:
