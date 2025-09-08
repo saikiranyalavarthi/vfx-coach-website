@@ -1,5 +1,6 @@
 // WorkshopSection.jsx
 import React from "react";
+import { Link } from "react-router-dom";
 
 const workshops = [
   {
@@ -72,7 +73,7 @@ const WorkshopCard = ({
         </div>
 
         <button className="mt-4 bg-lime-500 text-white px-5 py-2 rounded-lg font-semibold hover:brightness-90 transition transform hover:scale-105">
-          Enroll Now
+          <Link to="/contact">Enroll Now</Link>
         </button>
       </div>
     </div>

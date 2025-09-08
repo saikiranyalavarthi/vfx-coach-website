@@ -1,29 +1,32 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-4 left-0 right-0 mx-auto max-w-7xl z-50 bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl shadow-lg px-4 py-3 md:px-6 md:py-4">
+    <nav className="fixed top-4 left-0 right-0 z-50 bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl shadow-lg px-4 py-3 md:px-6 md:py-4 max-w-full md:max-w-7xl mx-auto overflow-x-hidden">
       <div className="flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center text-white font-semibold text-lg">
-          <img
-            src="/vfxlogo.jpg" // replace with your logo path
-            alt="VFX Coach Logo"
-            className="h-12 md:h-14 w-auto object-contain"
-          />
+          <Link to="/">
+            <img
+              src="/vfxlogo.jpg"
+              alt="VFX Coach Logo"
+              className="h-12 md:h-14 w-auto object-contain cursor-pointer"
+            />
+          </Link>
         </div>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8 text-white font-medium">
-          <a
+          {/* <a
             href="#"
             className="hover:text-lime-400 transition-colors duration-300"
           >
             For Business
-          </a>
+          </a> */}
           <a
             href="#profile"
             className="hover:text-lime-400 transition-colors duration-300"
@@ -63,10 +66,10 @@ const Navbar = () => {
 
       {/* Mobile Menu Dropdown */}
       {isOpen && (
-        <div className="md:hidden mt-3 w-full space-y-3 text-white bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl p-4 shadow-lg">
-          <a href="#" className="block hover:text-lime-400">
+        <div className="md:hidden mt-3 w-full max-w-full space-y-3 text-white bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl p-4 shadow-lg overflow-x-hidden">
+          {/* <a href="#" className="block hover:text-lime-400">
             For Business
-          </a>
+          </a> */}
           <a href="#profile" className="block hover:text-lime-400">
             About
           </a>
