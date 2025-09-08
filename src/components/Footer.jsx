@@ -73,7 +73,7 @@
 //                   {links.map((link) => (
 //                     <li
 //                       key={link}
-//                       className="hover:text-lime-400 transition-colors"
+//                       className="hover:text-[#FF991C] transition-colors"
 //                     >
 //                       {link}
 //                     </li>
@@ -182,7 +182,7 @@ export default function Footer() {
                     typeof link === "string" ? (
                       <li
                         key={link}
-                        className="hover:text-lime-400 transition-colors cursor-pointer"
+                        className="hover:text-[#FF991C] transition-colors cursor-pointer"
                       >
                         {link}
                       </li>
@@ -190,7 +190,7 @@ export default function Footer() {
                       <li key={link.name}>
                         <Link
                           to={link.path}
-                          className="hover:text-lime-400 transition-colors"
+                          className="hover:text-[#FF991C] transition-colors"
                         >
                           {link.name}
                         </Link>
