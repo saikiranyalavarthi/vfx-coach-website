@@ -4,27 +4,27 @@ import { Link } from "react-router-dom";
 
 const workshops = [
   {
-    title: "2 Day Gen-AI Mastermind",
+    title: "Ai - VFX Workshop for Creators",
     description:
-      "Build your own AI-driven apps, create stunning visuals, and automate workflows.",
+      "Ai tools and techniques to enhance your video editing and visual effects skills.",
     duration: "16 hours",
     mode: "Hybrid Mode",
-    countries: "32+ Countries",
+
     image:
       "https://images.unsplash.com/photo-1574169208507-84376174827f?auto=format&fit=crop&w=800&q=80",
   },
   {
-    title: "14 Day Gen-AI Bootcamp",
+    title: "AI for Filmmakers",
     description:
       "Build your own AI-driven apps, create stunning visuals, and automate workflows.",
     duration: "14 Days",
     mode: "Hybrid Mode",
-    countries: "32+ Countries",
+
     image:
       "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
   },
   {
-    title: "AI Tools Mastery",
+    title: "AI for YouTubers & Instagram Creators",
     description:
       "Master the latest AI tools and techniques to enhance your productivity and creativity.",
     duration: "Self-Paced",
@@ -67,9 +67,6 @@ const WorkshopCard = ({
         <div className="flex flex-wrap gap-4 text-gray-200 text-sm md:text-base mb-4">
           <span className="bg-gray-800 px-3 py-1 rounded-full">{duration}</span>
           <span className="bg-gray-800 px-3 py-1 rounded-full">{mode}</span>
-          <span className="bg-gray-800 px-3 py-1 rounded-full">
-            {countries}
-          </span>
         </div>
 
         <button className="mt-4 bg-[#FF991C] text-white px-5 py-2 rounded-lg font-semibold hover:brightness-90 transition transform hover:scale-105">

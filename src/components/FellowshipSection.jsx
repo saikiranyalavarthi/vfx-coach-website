@@ -3,12 +3,26 @@ import React from "react";
 
 const fellowshipData = [
   {
-    title: "AI Engineering Fellowship",
-    subtitle:
-      "Turn AI Concepts into Reality—Build & Deploy AI Models Like a Pro",
-    duration: "6 Months",
+    title: "AI-Powered",
+    subtitle: "Social Media Content Creation ",
+    duration: "7 Days",
     mode: "Hybrid Mode",
     countries: "8+ Countries",
+    mentors: [
+      "https://randomuser.me/api/portraits/men/32.jpg",
+      "https://randomuser.me/api/portraits/women/44.jpg",
+      "https://randomuser.me/api/portraits/men/65.jpg",
+    ],
+    extraMentorsCount: 2,
+    image:
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1470&q=80",
+  },
+  {
+    title: "VFX for Creators",
+    subtitle: "AI for YouTubers & Instagram Creators",
+    duration: "14 Days",
+    mode: "Hybrid Mode",
+    countries: "16+ Countries",
     mentors: [
       "https://randomuser.me/api/portraits/men/32.jpg",
       "https://randomuser.me/api/portraits/women/44.jpg",

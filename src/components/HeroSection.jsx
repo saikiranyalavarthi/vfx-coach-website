@@ -150,6 +150,7 @@
 import React, { useEffect, useState } from "react";
 import { Calendar, Clock, Video, Hourglass } from "lucide-react";
 import Papa from "papaparse";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   const [session, setSession] = useState(null);
@@ -173,9 +174,9 @@ const HeroSection = () => {
         {/* Left Side: Heading */}
         <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start justify-center text-center lg:text-left gap-6 py-12">
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold leading-snug sm:leading-tight">
-            Become a <span className="text-[#FF991C]">VFX PRO</span>
-            <br />
-            with our VFX Intro Workshop
+            Become a <span className="text-[#FF991C]">AI for VFX</span>
+            <br />A free workshop for filmmakers, artists, <br />
+            Content Creators.
           </h1>
         </div>
 
@@ -205,9 +206,11 @@ const HeroSection = () => {
           )}
 
           {/* CTA Button */}
-          <button className="w-full max-w-md bg-[#FF991C] text-black px-6 py-3 rounded-lg font-semibold text-lg hover:brightness-90 transition">
-            Become a VFX Pro for Rs. 0
-          </button>
+          <Link to="/contact">
+            <button className="w-full max-w-md bg-[#FF991C] text-black px-24 py-3 rounded-lg font-semibold text-lg hover:brightness-90 transition">
+              Become a VFX Pro for Rs. 9/-
+            </button>
+          </Link>
         </div>
       </div>
 

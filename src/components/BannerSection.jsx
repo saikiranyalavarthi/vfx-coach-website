@@ -11,9 +11,9 @@ const bannersData = [
   },
   {
     quote:
-      "Innovation distinguishes between a leader and a follower. Always push the boundaries.",
-    author: "Steve Jobs",
-    role: "Co-founder, Apple",
+      "don’t dream at night, I dream at day, I dream all day; I’m dreaming for living or You shouldn’t dream your film, you should make it",
+    author: "Steven Spielberg ",
+    role: "Film Director, USA",
     img: "image2.png",
   },
   {
