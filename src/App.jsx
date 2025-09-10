@@ -63,6 +63,7 @@ import TermsAndConditions from "./Pages/Terms";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import RefundPolicy from "./Pages/RefundPolicy";
 import ContactPage from "./Pages/Contact";
+import ProfessionalNetwork from "./components/ProfessionalNetwork";
 
 // Home page layout
 const Home = () => (
@@ -75,6 +76,7 @@ const Home = () => (
     <WorkshopSection />
     <UpskillSection />
     <BannerSection />
+    <ProfessionalNetwork />
     <StatsSection />
     <NewsletterSection />
     <ProfileCard />
