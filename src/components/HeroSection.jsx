@@ -207,7 +207,10 @@ const HeroSection = () => {
 
           {/* CTA Button */}
           <Link to="/contact">
-            <button className="w-full max-w-md bg-[#FF991C] text-black px-24 py-3 rounded-lg font-semibold text-lg hover:brightness-90 transitionhover:cursor-pointer">
+            <button
+              className="w-full max-w-md bg-[#FF991C] text-black px-24 py-3 rounded-lg 
+             font-semibold text-lg hover:brightness-90 hover:cursor-pointer transition"
+            >
               Become a VFX Pro for Rs. 9/-
             </button>
           </Link>

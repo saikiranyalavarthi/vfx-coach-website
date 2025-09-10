@@ -67,11 +67,11 @@ const BannerSection = () => {
           />
 
           {/* Overlay */}
-          <div className="absolute inset-0 bg-black/60 flex flex-col items-center justify-center text-center px-6">
-            <span className="text-6xl md:text-7xl font-bold text-[#FF991C] ">
+          <div className="absolute inset-0 bg-black/60 flex flex-col items-center justify-center text-center px-6 ">
+            <span className="text-6xl md:text-7xl font-bold text-[#FF991C] mt-50">
               “
             </span>
-            <p className="text-lg md:text-2xl lg:text-3xl font-medium max-w-4xl leading-relaxed text-white">
+            <p className="text-lg md:text-2xl lg:text-3xl font-medium max-w-4xl leading-relaxed text-white ">
               {banner.quote}
             </p>
             <div className="mt-6">
