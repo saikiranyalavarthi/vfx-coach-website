@@ -170,56 +170,63 @@ const HeroSection = () => {
 
   return (
     <section className="relative bg-gray-900 text-white overflow-hidden">
+      {/* Overlay Effect */}
+      <div className="absolute inset-0 bg-gradient-to-r from-gray-900/60 via-transparent to-gray-900/60 pointer-events-none"></div>
+
       <div className="relative w-full max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 flex flex-col lg:flex-row items-center justify-between min-h-screen">
         {/* Left Side: Heading */}
         <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start justify-center text-center lg:text-left gap-6 py-12">
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold leading-snug sm:leading-tight">
-            Become a <span className="text-[#FF991C]">AI for VFX</span>
-            <br />A free workshop for filmmakers, artists, <br />
-            Content Creators.
+          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold leading-tight text-amber-500">
+            AI for VFX <br />
           </h1>
+          <p className="text-xl sm:text-2xl lg:text-3xl font-medium text-gray-200 max-w-2xl leading-relaxed">
+            A free workshop for filmmakers, artists,
+            <br /> and content creators.
+          </p>
         </div>
 
         {/* Right Side: Info Cards + Button */}
-        <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-end gap-5 py-12">
+        <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-end gap-6 py-12">
           {session ? (
-            <div className="grid grid-cols-2 sm:grid-cols-2 gap-4 w-full max-w-md">
-              <div className="bg-white text-black rounded-lg px-4 py-3 flex items-center gap-2 shadow">
-                <Calendar className="text-[#FF991C]" />
-                <span className="font-medium">{session.date}</span>
+            <div className="grid grid-cols-2 sm:grid-cols-2 gap-5 w-full max-w-lg">
+              <div className="bg-white text-black rounded-lg px-6 py-4 flex items-center gap-3 shadow">
+                <Calendar className="text-[#FF991C] text-xl" />
+                <span className="font-semibold text-lg">{session.date}</span>
               </div>
-              <div className="bg-white text-black rounded-lg px-4 py-3 flex items-center gap-2 shadow">
-                <Clock className="text-[#FF991C]" />
-                <span className="font-medium">{session.time}</span>
+              <div className="bg-white text-black rounded-lg px-6 py-4 flex items-center gap-3 shadow">
+                <Clock className="text-[#FF991C] text-xl" />
+                <span className="font-semibold text-lg">{session.time}</span>
               </div>
-              <div className="bg-white text-black rounded-lg px-4 py-3 flex items-center gap-2 shadow">
-                <Video className="text-[#FF991C]" />
-                <span className="font-medium">{session.session}</span>
+              <div className="bg-white text-black rounded-lg px-6 py-4 flex items-center gap-3 shadow">
+                <Video className="text-[#FF991C] text-xl" />
+                <span className="font-semibold text-lg">{session.session}</span>
               </div>
-              <div className="bg-white text-black rounded-lg px-4 py-3 flex items-center gap-2 shadow">
-                <Hourglass className="text-[#FF991C]" />
-                <span className="font-medium">{session.duration}</span>
+              <div className="bg-white text-black rounded-lg px-6 py-4 flex items-center gap-3 shadow">
+                <Hourglass className="text-[#FF991C] text-xl" />
+                <span className="font-semibold text-lg">
+                  {session.duration}
+                </span>
               </div>
             </div>
           ) : (
-            <p className="text-gray-300">Loading session info...</p>
+            <p className="text-gray-300 text-lg">Loading session info...</p>
           )}
 
           {/* CTA Button */}
           <Link to="/contact">
             <button
-              className="w-full max-w-md bg-[#FF991C] text-black px-24 py-3 rounded-lg 
-             font-semibold text-sm hover:brightness-90 hover:cursor-pointer transition"
+              className="w-full max-w-lg bg-[#FF991C] text-black px-41 py-2 rounded-xl 
+              text-lg hover:brightness-90 hover:cursor-pointer transition font-semibold shadow-xl mt-6"
             >
-              Become a VFX Pro for{" "}
-              <span className="line-through">Rs. 999/-</span> FREE
+              Become a VFX Pro for <br />
+              <span className="text-1xl font-extrabold">
+                <span className="line-through text-black mr-2">Rs. 999/-</span>
+                FREE
+              </span>
             </button>
           </Link>
         </div>
       </div>
-
-      {/* Overlay Effect */}
-      <div className="absolute inset-0 bg-gradient-to-r from-gray-900/60 via-transparent to-gray-900/60 pointer-events-none"></div>
     </section>
   );
 };

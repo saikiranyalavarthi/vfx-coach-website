@@ -12,9 +12,9 @@ const Navbar = () => {
         <div className="flex items-center text-white font-semibold text-lg">
           <Link to="/">
             <img
-              src="/vfxlogo.jpg"
+              src="/logos/VFX Coach Logo-01.svg"
               alt="VFX Coach Logo"
-              className="h-12 md:h-14 w-auto object-contain cursor-pointer"
+              className="h-20 md:h-20 w-auto object-contain cursor-pointer"
             />
           </Link>
         </div>
