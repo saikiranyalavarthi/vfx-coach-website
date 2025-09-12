@@ -157,7 +157,7 @@ const HeroSection = () => {
 
   useEffect(() => {
     const csvUrl =
-      "https://docs.google.com/spreadsheets/d/e/2PACX-1vQdcE3hKDt1Uz79BooYPlRTObiIggiThXs_w0OmsnkNP_SmyB6fxAdKhqkuxdsMSjCzoo7PMiPp5nzp/pub?gid=0&single=true&output=csv";
+      "https://docs.google.com/spreadsheets/d/e/2PACX-1vTRnTiryQRIMa9FmHs4Qw5cD4sYSHn_sUczGfkKNJ4dv9cpIpYUqLp1p6myvF4RmqEn8QpxDRzTXqA_/pub?gid=0&single=true&output=csv";
 
     fetch(csvUrl)
       .then((res) => res.text())
@@ -209,9 +209,10 @@ const HeroSection = () => {
           <Link to="/contact">
             <button
               className="w-full max-w-md bg-[#FF991C] text-black px-24 py-3 rounded-lg 
-             font-semibold text-lg hover:brightness-90 hover:cursor-pointer transition"
+             font-semibold text-sm hover:brightness-90 hover:cursor-pointer transition"
             >
-              Become a VFX Pro for Rs. 9/-
+              Become a VFX Pro for{" "}
+              <span className="line-through">Rs. 999/-</span> FREE
             </button>
           </Link>
         </div>
