@@ -45,14 +45,14 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import ExperienceSection from "./components/ExperienceSection";
-import UpskillSection from "./components/UpskillSection";
+// import UpskillSection from "./components/UpskillSection";
 import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
 import ProgramsSection from "./components/ProgramsSection";
 import BannerSection from "./components/BannerSection";
 import WorkshopSection from "./components/WorkshopSection";
-import FellowshipSection from "./components/FellowshipSection";
-import NewsletterSection from "./components/NewsletterSection";
+// import FellowshipSection from "./components/FellowshipSection";
+// import NewsletterSection from "./components/NewsletterSection";
 import CourseFeatures from "./components/CourseFeatures";
 import StatsSection from "./components/StatsSection";
 import ProfileCard from "./components/ProfileCard";
@@ -72,13 +72,13 @@ const Home = () => (
     <ExperienceSection />
     <ProgramsSection />
     <CourseFeatures />
-    <FellowshipSection />
+    {/* <FellowshipSection /> */}
     <WorkshopSection />
-    <UpskillSection />
+    {/* <UpskillSection /> */}
     <BannerSection />
     <ProfessionalNetwork />
     <StatsSection />
-    <NewsletterSection />
+    {/* <NewsletterSection /> */}
     <ProfileCard />
     <ContactSection />
   </>

@@ -2,24 +2,25 @@ import { TrendingUp, Briefcase, IndianRupee, LineChart } from "lucide-react";
 
 const stats = [
   {
-    icon: <TrendingUp className="w-8 h-8 text-cyan-400" />,
-    value: "5000+",
-    label: "Students Completed",
+    icon: <TrendingUp className="w-8 h-8 text-[#FF991C]" />,
+    value: "160,000 ",
+    label: "new jobs annually",
   },
   {
-    icon: <Briefcase className="w-8 h-8 text-cyan-400" />,
-    value: "11.5 mn",
-    label: "Expected Jobs",
-  },
-  {
-    icon: <IndianRupee className="w-8 h-8 text-cyan-400" />,
-    value: "₹93.8 Lakhs",
-    label: "Avg. annual salary",
-  },
-  {
-    icon: <LineChart className="w-8 h-8 text-cyan-400" />,
-    value: "27.7%",
+    icon: <LineChart className="w-8 h-8 text-[#FF991C]" />,
+    value: "25–30%",
     label: "Annual market growth",
+  },
+  {
+    icon: <IndianRupee className="w-8 h-8 text-[#FF991C]" />,
+    value: "₹5.1 lakhs per annum",
+    label: "Avg.salary",
+  },
+
+  {
+    icon: <Briefcase className="w-8 h-8 text-[#FF991C]" />,
+    value: "2000+",
+    label: "Students completed ",
   },
 ];
 

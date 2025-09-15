@@ -57,10 +57,7 @@ export default function ProgramsSection() {
 
               <ul className="space-y-2">
                 {items.map((item, idx) => (
-                  <li
-                    key={idx}
-                    className="text-gray-200 hover:text-lime-400 cursor-pointer transition"
-                  >
+                  <li key={idx} className="text-gray-200">
                     • {item}
                   </li>
                 ))}

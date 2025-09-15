@@ -175,11 +175,11 @@ const HeroSection = () => {
 
       <div className="relative w-full max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 flex flex-col lg:flex-row items-center justify-between min-h-screen">
         {/* Left Side: Heading */}
-        <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start justify-center text-center lg:text-left gap-6 py-12">
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold leading-tight text-amber-500">
+        <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start justify-center text-center lg:text-left gap-3 py-12">
+          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold leading-tight text-white">
             AI for VFX <br />
           </h1>
-          <p className="text-xl sm:text-2xl lg:text-3xl font-medium text-gray-200 max-w-2xl leading-relaxed">
+          <p className="text-xl sm:text-2xl lg:text-3xl font-medium text-gray-200 max-w-2xl leading-relaxed mx-auto lg:mx-0">
             A free workshop for filmmakers, artists,
             <br /> and content creators.
           </p>
@@ -215,8 +215,8 @@ const HeroSection = () => {
           {/* CTA Button */}
           <Link to="/contact">
             <button
-              className="w-full max-w-lg bg-[#FF991C] text-black px-41 py-2 rounded-xl 
-              text-lg hover:brightness-90 hover:cursor-pointer transition font-semibold shadow-xl mt-6"
+              className="w-full max-w-lg bg-[#FF991C] text-black px-41 py-1 rounded-xl 
+              text-lg hover:brightness-90 hover:cursor-pointer transition font-semibold shadow-xl mt-0.25"
             >
               Become a VFX Pro for <br />
               <span className="text-1xl font-extrabold">
