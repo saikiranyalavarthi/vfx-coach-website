@@ -163,10 +163,20 @@ export default function Footer() {
           {/* Logo & Info */}
           <div className="md:w-1/4 mb-8 md:mb-0">
             <div className="flex items-center space-x-3 mb-3">
-              <span className="text-xl font-semibold">Vfx Coach </span>
+              {/* Logo image */}
+              <img
+                src="/logos/VFX Coach Logo-01.svg"
+                alt="Vfx Coach Logo"
+                className="h-20 w-auto"
+              />
             </div>
-            <p className="text-gray-400 text-sm">
+
+            {/* Copyright + Tooltip */}
+            <p className="text-gray-400 text-sm relative group cursor-pointer w-fit">
               © 2025 Vfx Coach Pvt. Ltd. All rights reserved
+              <span className="absolute left-0 bottom-full mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black text-white text-xs px-2 py-1 rounded-lg shadow-lg whitespace-nowrap">
+                Website designed by Saikiran Yalavarthi
+              </span>
             </p>
           </div>
 
