@@ -57,7 +57,7 @@ export default function ProgramsSection() {
 
               <ul className="space-y-2">
                 {items.map((item, idx) => (
-                  <li key={idx} className="text-gray-200">
+                  <li key={idx} className="text-gray-200 flex items-center">
                     • {item}
                   </li>
                 ))}

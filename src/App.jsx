@@ -64,6 +64,7 @@ import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import RefundPolicy from "./Pages/RefundPolicy";
 import ContactPage from "./Pages/Contact";
 import ProfessionalNetwork from "./components/ProfessionalNetwork";
+import Testimonials from "./components/Testimonials";
 
 // Home page layout
 const Home = () => (
@@ -79,6 +80,7 @@ const Home = () => (
     <ProfessionalNetwork />
     <StatsSection />
     {/* <NewsletterSection /> */}
+    <Testimonials />
     <ProfileCard />
     <ContactSection />
   </>
