@@ -4,7 +4,7 @@ import { MapPin, Briefcase, Languages } from "lucide-react";
 
 export default function TalentProfileCard() {
   return (
-    <section className="bg-black text-white py-12 px-6">
+    <section id="profile" className="bg-black text-white py-12 px-6 ">
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <p className="text-sm text-gray-400 uppercase tracking-widest">

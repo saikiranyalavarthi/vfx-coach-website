@@ -51,7 +51,7 @@ const Navbar = () => {
 
       {/* Mobile Menu Dropdown */}
       {isOpen && (
-        <div className="absolute top-full left-0 mt-3 w-full bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl p-6 shadow-lg flex flex-col space-y-5 text-white">
+        <div className="absolute top-full left-0 mt-3 w-full bg-[#FF991C] backdrop-blur-lg border border-white/20 rounded-xl p-6 shadow-lg flex flex-col space-y-5 text-white">
           {/* Title */}
 
           <a
@@ -75,7 +75,7 @@ const Navbar = () => {
 
           {/* Big Button */}
           <a href="#programs">
-            <button className="mt-4 w-full bg-[#FF991C] text-black text-lg px-6 py-3 rounded-lg font-semibold hover:bg-[#e07f10] transition shadow-md">
+            <button className="mt-4 w-full bg-am text-black text-lg px-6 py-3 rounded-lg font-semibold hover:bg-amber-200 transition shadow-md">
               Explore Courses
             </button>
           </a>
