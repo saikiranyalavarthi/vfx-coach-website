@@ -4,11 +4,12 @@ import { Link } from "react-router-dom";
 
 const workshops = [
   {
-    title: " AI Powered - Social Media Content Creation",
+    title: "AI Powered - Social Media Content Creation",
     description:
-      "Kickstart your AI journey by creating powerful social content using trending tools",
+      "Kickstart your AI journey by creating powerful social content using trending tools.",
     duration: "One Week",
-    price: "Rs.999",
+    priceOriginal: "Rs.5000",
+    priceDiscount: "Rs.999",
     mode: "Live",
     items: [
       "Social Media Content Creation",
@@ -18,25 +19,27 @@ const workshops = [
       "https://images.unsplash.com/photo-1574169208507-84376174827f?auto=format&fit=crop&w=800&q=80",
   },
   {
-    title: " VFX for Creators",
+    title: "VFX for Filmmakers",
     description:
       "Hands-on training for creators to harness AI in storytelling and video production.",
     duration: "One Month",
     mode: "Live",
-    price: "Rs.9900",
+    priceOriginal: "Rs.30,000",
+    priceDiscount: "Rs.9,900",
     items: ["AI for Advance Video Production", "AI for Film Making"],
     image:
       "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
   },
   {
-    title: " VFX Mastery : From Explainer Videos to Cinematic Visuals",
+    title: "VFX Mastery: From Explainer Videos to Cinematic Visuals",
     description:
       "Master cinematic visuals and motion graphics with VFX & AI-integrated workflows.",
     duration: "Two Months",
     mode: "Live",
-    price: "Rs.19900",
-    items: ["Advance VFX with AI Tools", "AI-Powered Advanced Video Editing"],
+    priceOriginal: "Rs.50,000",
+    priceDiscount: "Rs.19,900",
     countries: "Global Access",
+    items: ["Advance VFX with AI Tools", "AI-Powered Advanced Video Editing"],
     image:
       "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80",
   },
@@ -49,7 +52,8 @@ const WorkshopCard = ({
   mode,
   countries,
   items,
-  price,
+  priceOriginal,
+  priceDiscount,
   image,
 }) => {
   return (
@@ -93,13 +97,24 @@ const WorkshopCard = ({
         </div>
 
         {/* Price */}
-        {price && (
-          <div className="text-xl font-bold text-[#FF991C] mb-4">{price}</div>
+        {priceDiscount && (
+          <div className="mb-4 flex items-center gap-2">
+            <span className="text-gray-400 line-through text-lg">
+              {priceOriginal}
+            </span>
+            <span className="text-[#FF991C] font-bold text-2xl">
+              {priceDiscount}
+            </span>
+          </div>
         )}
 
-        <button className="mt-2 bg-[#FF991C] text-white px-5 py-2 rounded-lg font-semibold hover:brightness-90 transition transform hover:scale-105">
-          <Link to="/contact">Enroll Now</Link>
-        </button>
+        {/* Enroll Button Inside Card */}
+        <Link
+          to="/contact"
+          className="mt-2 inline-block bg-gradient-to-r from-[#FF991C] to-[#FF6B00] text-white px-6 py-3 rounded-xl font-semibold hover:scale-105 hover:brightness-110 transition transform shadow-lg text-center"
+        >
+          Enroll Now
+        </Link>
       </div>
     </div>
   );
@@ -107,7 +122,7 @@ const WorkshopCard = ({
 
 const WorkshopSection = () => {
   return (
-    <section className="bg-gray-900 p-6 md:p-10 ">
+    <section className="bg-gray-900 p-6 md:p-10">
       {/* Section Header */}
       <div className="max-w-5xl mx-auto mb-12 text-center">
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-3">
