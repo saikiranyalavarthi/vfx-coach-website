@@ -147,9 +147,15 @@ const socialIcons = [
   {
     name: "LinkedIn",
     icon: (
-      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 10-4 0v7h-4v-14h4v2h.1a4 4 0 014-2zM2 9h4v12H2zM4 3a2 2 0 110 4 2 2 0 010-4z" />
-      </svg>
+      <a
+        href="https://www.linkedin.com/in/arun-kumar-etikapally-6a823239/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 10-4 0v7h-4v-14h4v2h.1a4 4 0 014-2zM2 9h4v12H2zM4 3a2 2 0 110 4 2 2 0 010-4z" />
+        </svg>
+      </a>
     ),
   },
 ];
@@ -221,7 +227,7 @@ export default function Footer() {
               <button
                 key={name}
                 aria-label={name}
-                className="bg-black/40 hover:bg-lime-500 hover:text-black p-2 rounded-full transition transform hover:scale-110"
+                className="bg-black/40 hover:bg-[#FF991C] hover:text-black p-2 rounded-full transition transform hover:scale-110"
               >
                 {icon}
               </button>
