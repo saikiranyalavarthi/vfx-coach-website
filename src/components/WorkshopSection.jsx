@@ -7,7 +7,7 @@ const workshops = [
     title: "Ai - VFX Workshop for Creators",
     description:
       "Kickstart your AI journey by creating powerful social content using trending tools",
-    duration: "16 hours",
+    duration: "One Week",
     price: "Rs.999",
     mode: "Live",
     items: [
@@ -21,7 +21,7 @@ const workshops = [
     title: "AI for Filmmakers",
     description:
       "Hands-on training for creators to harness AI in storytelling and video production.",
-    duration: "14 Days",
+    duration: "One Month",
     mode: "Live",
     price: "Rs.9900",
     items: ["AI for Advance Video Production", "AI for Film Making"],
@@ -32,7 +32,7 @@ const workshops = [
     title: "AI for YouTubers & Instagram Creators",
     description:
       "Master cinematic visuals and motion graphics with VFX & AI-integrated workflows.",
-    duration: "Self-Paced",
+    duration: "Two Months",
     mode: "Live",
     price: "Rs.19900",
     items: ["Advance VFX with AI Tools", "AI-Powered Advanced Video Editing"],
