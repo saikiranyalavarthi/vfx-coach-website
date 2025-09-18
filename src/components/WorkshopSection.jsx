@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const workshops = [
   {
-    title: "Ai - VFX Workshop for Creators",
+    title: " AI-Powered - Social Media Content Creation",
     description:
       "Kickstart your AI journey by creating powerful social content using trending tools",
     duration: "One Week",
@@ -18,7 +18,7 @@ const workshops = [
       "https://images.unsplash.com/photo-1574169208507-84376174827f?auto=format&fit=crop&w=800&q=80",
   },
   {
-    title: "AI for Filmmakers",
+    title: " VFX for Creators",
     description:
       "Hands-on training for creators to harness AI in storytelling and video production.",
     duration: "One Month",
@@ -29,7 +29,7 @@ const workshops = [
       "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
   },
   {
-    title: "AI for YouTubers & Instagram Creators",
+    title: " VFX Mastery : From Explainer Videos to Cinematic Visuals",
     description:
       "Master cinematic visuals and motion graphics with VFX & AI-integrated workflows.",
     duration: "Two Months",
