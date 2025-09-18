@@ -56,19 +56,19 @@ const Navbar = () => {
 
           <a
             href="#profile"
-            className="block text-lg font-medium hover:text-[#FF991C]"
+            className="block text-lg font-medium hover:text-amber-300"
           >
             About
           </a>
           <a
             href="#Courses"
-            className="block text-lg font-medium hover:text-[#FF991C]"
+            className="block text-lg font-medium  hover:text-amber-300"
           >
             Courses
           </a>
           <a
             href="#contact"
-            className="block text-lg font-medium hover:text-[#FF991C]"
+            className="block text-lg font-medium  hover:text-amber-300"
           >
             Contact Us
           </a>
