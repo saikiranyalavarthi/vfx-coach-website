@@ -48,7 +48,7 @@ import ExperienceSection from "./components/ExperienceSection";
 // import UpskillSection from "./components/UpskillSection";
 import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
-import ProgramsSection from "./components/ProgramsSection";
+// import ProgramsSection from "./components/ProgramsSection";
 import BannerSection from "./components/BannerSection";
 import WorkshopSection from "./components/WorkshopSection";
 // import FellowshipSection from "./components/FellowshipSection";
@@ -71,10 +71,12 @@ const Home = () => (
   <>
     <HeroSection />
     <ExperienceSection />
-    <ProgramsSection />
-    <CourseFeatures />
-    {/* <FellowshipSection /> */}
     <WorkshopSection />
+    {/* <ProgramsSection /> */}
+    <CourseFeatures />
+
+    {/* <FellowshipSection /> */}
+
     {/* <UpskillSection /> */}
     <BannerSection />
     <ProfessionalNetwork />

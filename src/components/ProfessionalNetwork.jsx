@@ -22,8 +22,7 @@ const ProfessionalNetwork = () => {
       {/* Heading */}
       <div className="text-center max-w-3xl mb-16">
         <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-4">
-          The Tools
-          <span className="text-[#FF991C]">Behind </span> the Magic
+          The Tools Behind <span className="text-[#FF991C]"> the Magic</span>
         </h1>
         <p className="text-gray-300 text-lg md:text-xl">
           Explore cutting-edge VFX and AI-integrated software used

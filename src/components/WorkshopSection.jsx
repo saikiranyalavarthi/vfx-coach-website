@@ -6,29 +6,36 @@ const workshops = [
   {
     title: "Ai - VFX Workshop for Creators",
     description:
-      "Ai tools and techniques to enhance your video editing and visual effects skills.",
+      "Kickstart your AI journey by creating powerful social content using trending tools",
     duration: "16 hours",
-    mode: "Hybrid Mode",
-
+    price: "Rs.999",
+    mode: "Live",
+    items: [
+      "Social Media Content Creation",
+      "AI Tools for Reels, Videos & Shorts",
+    ],
     image:
       "https://images.unsplash.com/photo-1574169208507-84376174827f?auto=format&fit=crop&w=800&q=80",
   },
   {
     title: "AI for Filmmakers",
     description:
-      "Build your own AI-driven apps, create stunning visuals, and automate workflows.",
+      "Hands-on training for creators to harness AI in storytelling and video production.",
     duration: "14 Days",
-    mode: "Hybrid Mode",
-
+    mode: "Live",
+    price: "Rs.9900",
+    items: ["AI for Advance Video Production", "AI for Film Making"],
     image:
       "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
   },
   {
     title: "AI for YouTubers & Instagram Creators",
     description:
-      "Master the latest AI tools and techniques to enhance your productivity and creativity.",
+      "Master cinematic visuals and motion graphics with VFX & AI-integrated workflows.",
     duration: "Self-Paced",
-    mode: "Online",
+    mode: "Live",
+    price: "Rs.19900",
+    items: ["Advance VFX with AI Tools", "AI-Powered Advanced Video Editing"],
     countries: "Global Access",
     image:
       "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80",
@@ -41,6 +48,8 @@ const WorkshopCard = ({
   duration,
   mode,
   countries,
+  items,
+  price,
   image,
 }) => {
   return (
@@ -61,15 +70,34 @@ const WorkshopCard = ({
           <p className="text-gray-300 text-sm md:text-base mb-4">
             {description}
           </p>
+
+          {/* Items List */}
+          {items && items.length > 0 && (
+            <ul className="text-gray-200 text-sm md:text-base mb-4 list-disc list-inside space-y-1">
+              {items.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          )}
         </div>
 
         {/* Info Section */}
         <div className="flex flex-wrap gap-4 text-gray-200 text-sm md:text-base mb-4">
           <span className="bg-gray-800 px-3 py-1 rounded-full">{duration}</span>
           <span className="bg-gray-800 px-3 py-1 rounded-full">{mode}</span>
+          {countries && (
+            <span className="bg-gray-800 px-3 py-1 rounded-full">
+              {countries}
+            </span>
+          )}
         </div>
 
-        <button className="mt-4 bg-[#FF991C] text-white px-5 py-2 rounded-lg font-semibold hover:brightness-90 transition transform hover:scale-105">
+        {/* Price */}
+        {price && (
+          <div className="text-xl font-bold text-[#FF991C] mb-4">{price}</div>
+        )}
+
+        <button className="mt-2 bg-[#FF991C] text-white px-5 py-2 rounded-lg font-semibold hover:brightness-90 transition transform hover:scale-105">
           <Link to="/contact">Enroll Now</Link>
         </button>
       </div>

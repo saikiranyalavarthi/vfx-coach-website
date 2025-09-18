@@ -39,7 +39,7 @@ const ExperienceSection = () => {
           AI FOR ALL STAGES
         </p>
         <h2 className="text-4xl md:text-5xl font-serif font-bold">
-          Who is Outskill for?
+          Who is VFXCoach for?
         </h2>
       </div>
 
