@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const workshops = [
   {
-    title: " AI-Powered - Social Media Content Creation",
+    title: " AI Powered - Social Media Content Creation",
     description:
       "Kickstart your AI journey by creating powerful social content using trending tools",
     duration: "One Week",
