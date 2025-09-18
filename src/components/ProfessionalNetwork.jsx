@@ -22,11 +22,12 @@ const ProfessionalNetwork = () => {
       {/* Heading */}
       <div className="text-center max-w-3xl mb-16">
         <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-4">
-          Elevate your <span className="text-[#FF991C]">Professional</span>{" "}
-          Network
+          The Tools
+          <span className="text-[#FF991C]">Behind </span> the Magic
         </h1>
         <p className="text-gray-300 text-lg md:text-xl">
-          Discover Your Place Among Professionals from Leading Brands
+          Explore cutting-edge VFX and AI-integrated software used
+          across the industry.
         </p>
       </div>
 

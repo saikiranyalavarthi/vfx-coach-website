@@ -6,17 +6,17 @@ const ExperienceSection = () => {
     {
       years: "1-3 Yrs",
       description:
-        "of Experience\nStand out early by leveraging AI as your advantage.",
+        "Kickstart your creative career by blending VFX fundamentals with AI-powered workflows. Stay ahead in a rapidly evolving industry.",
     },
     {
       years: "3-9 Yrs",
       description:
-        "of Experience\nLead AI-driven projects and deliver impactful outcomes.",
+        "Lead futuristic content creation by mastering advanced VFX, motion design, and AI-enhanced post-production tools.",
     },
     {
       years: "10+ Yrs",
       description:
-        "of Experience\nManage AI teams and drive organizational transformation.",
+        "Drive creative innovation. Manage teams using AI-integrated pipelines and lead large-scale visual storytelling projects with impac",
     },
   ];
 

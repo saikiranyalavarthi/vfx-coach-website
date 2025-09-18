@@ -11,7 +11,7 @@ const bannersData = [
   },
   {
     quote:
-      "don’t dream at night, I dream at day, I dream all day; I’m dreaming for living or You shouldn’t dream your film, you should make it",
+      "Don’t dream at night, I dream at day, I dream all day; I’m dreaming for living or You shouldn’t dream your film, you should make it",
     author: "Steven Spielberg ",
     role: "Film Director, USA",
     img: "image2.png",

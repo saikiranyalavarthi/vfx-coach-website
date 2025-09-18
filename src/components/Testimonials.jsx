@@ -40,15 +40,6 @@ export default function Testimonials() {
             className="relative bg-gray-900 p-6 rounded-2xl shadow-lg hover:scale-[1.02] transition-transform duration-300"
             aria-label={`Testimonial from ${t.name}`}
           >
-            <svg
-              className="w-10 h-10 text-indigo-400 opacity-90 mb-4"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-            >
-              <path d="M7.17 6A5 5 0 0 0 4 10v6a2 2 0 0 0 2 2h6a5 5 0 0 0 5-5v-1a4 4 0 0 0-4-4H7.17zM17.17 6A5 5 0 0 0 14 10v6a2 2 0 0 0 2 2h6a1 1 0 0 0 1-1v-1a4 4 0 0 0-4-4h-2.83z" />
-            </svg>
-
             <blockquote className="text-gray-200 text-sm sm:text-base leading-relaxed mb-6">
               “{t.quote}”
             </blockquote>
@@ -69,9 +60,9 @@ export default function Testimonials() {
             </div>
 
             {/* subtle accent */}
-            <span className="absolute top-3 right-3 text-xs uppercase text-indigo-400 font-medium">
+            {/* <span className="absolute top-3 right-3 text-xs uppercase text-indigo-400 font-medium">
               VFX
-            </span>
+            </span> */}
           </article>
         ))}
       </div>

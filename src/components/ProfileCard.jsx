@@ -7,12 +7,12 @@ export default function TalentProfileCard() {
     <section id="profile" className="bg-black text-white py-12 px-6 ">
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
-        <p className="text-sm text-gray-400 uppercase tracking-widest">
-          OUTSKILL DIRECTORY
+        {/* <p className="text-sm text-gray-400 uppercase tracking-widest">
+        VFXCoach DIRECTORY
         </p>
         <h1 className="text-3xl md:text-5xl font-bold mt-2">
           Curated AI-First Talent Network
-        </h1>
+        </h1> */}
 
         {/* Profile Card */}
         <div className="mt-10 flex flex-col md:flex-row items-start gap-12 bg-gray-900 rounded-2xl p-8 md:p-12 shadow-2xl">
