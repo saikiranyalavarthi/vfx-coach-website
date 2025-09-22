@@ -65,11 +65,13 @@ import RefundPolicy from "./Pages/RefundPolicy";
 import ContactPage from "./Pages/Contact";
 import ProfessionalNetwork from "./components/ProfessionalNetwork";
 import Testimonials from "./components/Testimonials";
+import NotificationPopup from "./components/NotificationPopup";
 
 // Home page layout
 const Home = () => (
   <>
     <HeroSection />
+    <NotificationPopup />
     <ExperienceSection />
     <WorkshopSection />
     {/* <ProgramsSection /> */}
