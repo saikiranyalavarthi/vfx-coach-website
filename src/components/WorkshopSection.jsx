@@ -57,7 +57,10 @@ const WorkshopCard = ({
   image,
 }) => {
   return (
-    <div className="relative rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition duration-300 max-w-lg mx-auto">
+    <div
+      id="programs"
+      className="relative rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition duration-300 max-w-lg mx-auto"
+    >
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center"
