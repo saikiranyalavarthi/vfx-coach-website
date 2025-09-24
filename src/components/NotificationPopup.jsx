@@ -7,6 +7,7 @@ const NotificationPopup = () => {
   const [session, setSession] = useState(null);
   const [show, setShow] = useState(false);
 
+  // Fetch session data once
   useEffect(() => {
     const csvUrl =
       "https://docs.google.com/spreadsheets/d/e/2PACX-1vTRnTiryQRIMa9FmHs4Qw5cD4sYSHn_sUczGfkKNJ4dv9cpIpYUqLp1p6myvF4RmqEn8QpxDRzTXqA_/pub?gid=0&single=true&output=csv";
@@ -20,69 +21,62 @@ const NotificationPopup = () => {
       .catch((err) => console.error("Error fetching CSV:", err));
   }, []);
 
-  // Handle delayed popup and auto-dismiss
+  // First popup after 2 seconds
   useEffect(() => {
-    const timer = setTimeout(() => setShow(true), 2000); // show after 2s
+    const timer = setTimeout(() => setShow(true), 2000);
     return () => clearTimeout(timer);
   }, []);
 
+  // Reappear every 5 seconds
   useEffect(() => {
-    if (show) {
-      const autoDismiss = setTimeout(() => setShow(false), 10000); // hide after 10s
-      return () => clearTimeout(autoDismiss);
-    }
-  }, [show]);
+    const interval = setInterval(() => {
+      setShow(true);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
 
   if (!show) return null;
 
   return (
-    <div className="fixed bottom-4 right-4 w-full max-w-sm sm:max-w-md z-50">
-      <div className="bg-gray-900 text-white rounded-xl shadow-lg p-4 sm:p-6 flex flex-col gap-3 animate-slide-up relative">
+    <div className="fixed bottom-0 left-0 w-full z-50">
+      <div className="backdrop-blur-md bg-white/20 border-t border-white/30 text-white px-6 sm:px-10 py-6 sm:py-8 flex flex-col sm:flex-row justify-between items-center gap-6 animate-slide-up relative">
         {/* Close Button */}
         <button
           onClick={() => setShow(false)}
-          className="absolute top-2 right-2 text-gray-400 hover:text-white"
+          className="absolute top-3 right-6 text-gray-200 hover:text-white"
         >
-          <X size={18} />
+          <X size={22} />
         </button>
 
+        {/* Session Info */}
         {session ? (
-          <div className="grid grid-cols-2 gap-2 sm:gap-3">
-            <div className="bg-white text-black rounded-lg px-3 py-2 flex items-center gap-2 shadow">
-              <Calendar className="text-[#FF991C]" />
-              <span className="font-semibold text-sm sm:text-base">
-                {session.date}
-              </span>
+          <div className="grid grid-cols-2 sm:flex sm:flex-row gap-4 text-base sm:text-lg font-medium">
+            <div className="flex items-center gap-2">
+              <Calendar className="text-yellow-400" size={20} />
+              <span>{session.date}</span>
             </div>
-            <div className="bg-white text-black rounded-lg px-3 py-2 flex items-center gap-2 shadow">
-              <Clock className="text-[#FF991C]" />
-              <span className="font-semibold text-sm sm:text-base">
-                {session.time}
-              </span>
+            <div className="flex items-center gap-2">
+              <Clock className="text-yellow-400" size={20} />
+              <span>{session.time}</span>
             </div>
-            <div className="bg-white text-black rounded-lg px-3 py-2 flex items-center gap-2 shadow">
-              <Video className="text-[#FF991C]" />
-              <span className="font-semibold text-sm sm:text-base">
-                {session.session}
-              </span>
+            <div className="flex items-center gap-2">
+              <Video className="text-yellow-400" size={20} />
+              <span>{session.session}</span>
             </div>
-            <div className="bg-white text-black rounded-lg px-3 py-2 flex items-center gap-2 shadow">
-              <Hourglass className="text-[#FF991C]" />
-              <span className="font-semibold text-sm sm:text-base">
-                {session.duration}
-              </span>
+            <div className="flex items-center gap-2">
+              <Hourglass className="text-yellow-400" size={20} />
+              <span>{session.duration}</span>
             </div>
           </div>
         ) : (
-          <p className="text-gray-300 text-sm sm:text-base">
-            Loading session info...
-          </p>
+          <p className="text-gray-200 text-base">Loading session info...</p>
         )}
 
+        {/* CTA Button */}
         <Link to="/contact">
-          <button className="w-full bg-[#FF991C] text-black px-4 py-2 sm:py-3 rounded-lg text-sm sm:text-base hover:brightness-90 transition font-semibold shadow-lg mt-2">
+          <button className="bg-yellow-400 text-black px-6 py-3 rounded-lg text-base sm:text-lg font-semibold hover:brightness-90 transition shadow-lg">
             Become a VFX Pro for{" "}
-            <span className="font-extrabold block sm:inline">
+            <span className="font-extrabold">
               <span className="line-through text-black mr-1">Rs. 999/-</span>
               FREE
             </span>
@@ -98,7 +92,7 @@ const NotificationPopup = () => {
             100% { transform: translateY(0); opacity: 1; }
           }
           .animate-slide-up {
-            animation: slideUp 0.5s ease-out forwards;
+            animation: slideUp 0.6s ease-out forwards;
           }
         `}
       </style>
